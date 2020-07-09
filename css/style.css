@@ -1,42 +1,45 @@
 #myVideo {
     position: relative;
     right: 0;
-    bottom:0;
-    max-width: 100%; 
-    max-height: 100%;
-    
-
+    bottom: 0;
+    width: 100%;
+}
+.container-video {
+    width: 100%;
 }
 .presently{
-overflow: hidden;;
-max-height: 100vh;
+    overflow: hidden;
+    position: relative;
+    max-height: 100vh;
 }
 #typingTwo h1{
- margin-top: 20px;
+    margin-top: 20px;
     font-size: 40px;
     font-family: 'Quantico', sans-serif;
     font-weight: 700;
     color: white;
 }
 #typingTwo {
-    margin-top: 14%;
+    margin-top: 10px;
+    margin-right: 2px;
 }
 .logo-text{   
     display: flex;
-    justify-content:center; 
+    justify-content: center;
+    align-items: center;
     padding: 0 20px;
     border: 2px solid #e9c639;
-    width: 64%;
+    width: 65%;
     height: 300px;
-    margin: 30px;
+    margin: 0 auto;
+    flex-wrap: nowrap;
 }
 .content{
-    display: flex;
     position: absolute;
     width: 100%;
-    top: 20%;
-    height: 5px;
-    justify-content: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
 }
 main {
     display: block;
@@ -53,7 +56,12 @@ main {
 .navbar-dark .navbar-nav .nav-link {
     color: rgba(255, 255, 255, 0.89);
 }
- 
+ .stick{
+    color: white;
+    padding-top: 7px;
+    opacity: .75;
+    cursor: default;
+ }
 .navbar {
     position: absolute;
     margin-bottom: 2%;
@@ -200,7 +208,7 @@ main {
 
 /* SERVICES */
 .services {
-
+    padding-bottom: 60px;
     padding-top: 60px;
     background: linear-gradient(180deg, #010001 0%, #242323 100%);
 }
@@ -232,7 +240,7 @@ main {
 .services .services-text>div {
     background: #64626230;
     padding: 25px 20px 20px;
-   
+    min-height: 345px;
 }
 
 .services .services-text h4 {
@@ -309,15 +317,17 @@ main {
     font-family: 'Quantico', sans-serif;
     font-weight: 700;
     cursor: pointer;
-    transition: 1s;
+    transition: all .3s;
 }
 .services__footer div:hover {
     transform: scale(0.9);
-   }
+}
+
 .services__footer div:nth-child(1) {
     background: linear-gradient(180deg, #FFDC50 0%, rgba(255, 222, 89, 0.73) 100%);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
+
 
 .services__footer div:nth-child(2) {
     background: linear-gradient(180deg, #1d1d1d 0%, rgb(24, 22, 22) 100%);
@@ -333,7 +343,10 @@ main {
     background: linear-gradient(180deg, #C1BDBD 0%, #E9E8E8 100%);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
-
+.services__footer div.active{
+    transform: scale(0.9);
+    box-shadow: inset 0 -1px 1px 2px rgba(0,0,0,.1), inset 0 1px 5px 4px rgba(0,0,0,.3);
+}
 .services__footer span {
     border-bottom: 2px solid black;
     font-size: 48px;
@@ -423,7 +436,6 @@ main {
   
   .typed-cursor{
       opacity: 1;
-      font-weight: 200;
       animation: blink 0.7s infinite;
   }
   @keyframes blink{
@@ -474,7 +486,7 @@ main {
 /* Design */
 .design {
     background: rgb(19, 18, 18);
-    padding: 20px 0 100px;
+    padding: 20px 0 150px;
 }
 
 .design_wrap {
@@ -486,18 +498,19 @@ main {
     padding-right: 80px;
 }
 
-.design_left h3 {
+.design h3 {
     font-size: 48px;
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
     color: #CDCACA;
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    text-align: center;
+    margin-bottom: 50px;
 }
 
 .design_right {
     padding-left: 80px;
     padding-right: 0px;
-    margin-top: 40px;
 }
 
 .design_left,
@@ -534,12 +547,10 @@ main {
 }
 .carousel-indicators li {
 
-    background-color: #2d2d2d!important;
+    background-color: #ff8c00!important;
 
 }
-.carousel-control-prev-icon{
-    display: none;
-}
+
 /* Contacts */
  
 
@@ -558,6 +569,9 @@ footer p {
 }
 .typed-cursor{
     opacity: 1;
+    color: white;
+    font-weight: 600;
+    font-size: 24px;
     -webkit-animation: blink 0.7s infinite;
     -moz-animation: blink 0.7s infinite;
     animation: blink 0.7s infinite;
@@ -588,7 +602,7 @@ footer p {
     height: auto;
   }
   
-  .overlay {
+.overlay {
     position: absolute;
     bottom: 0;
     left: 0;
@@ -598,25 +612,29 @@ footer p {
     width: 100%;
     height: 0;
     transition: .5s ease;
-  }
-  
-  .case:hover .overlay {
+}
+
+.case:hover .overlay {
     bottom: 0;
     height: 50%;
-  }
-  
-  .text {
+}
+.case h4 {
+    text-align: center;
+}
+.text {
     color: white;
     font-size: 20px;
-    position: absolute;
-    top: 50%;
-    left: 35%;
-    -webkit-transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-    text-align: left;
-  }
-  
+    padding: 15px 10px;
+}
+.case ul {
+    list-style: none;
+}
+
+.case ul li:before {
+    content:  "—";
+    position: relative;
+    left:     -7px;
+}
   /*page*/
 .section-one{
    /* The image used */
@@ -764,9 +782,6 @@ footer p {
         font-size: 33px;
         line-height: 48px;
     }
-.nav-link{
-    font-size: 16px!important;
-}
 
 }
 @media screen and (max-width: 795px){
@@ -836,18 +851,7 @@ footer p {
     .we .we-text>div {
         right: 0;
     }
-    .nav-item{
-        padding: 0 10px;
-        border-bottom: 1px solid #cfb54d;
-    }
-    .navbar-nav {
-        background: #f4d556;
 
-    }
-    .logo {
-        font-size: 30px;
-        margin-left: 10px;
-    }
     .services .services-image>div {
         width: 100%;
         height: 100%;
@@ -899,4 +903,269 @@ footer p {
     padding: 25px 0 0 0;
     display: flex;
     justify-content: flex-end;
+}
+.carousel-control-prev-icon,.carousel-control-next-icon {
+    background-color: #ffc14b;
+    border-radius: 50%;
+    padding: 8px;
+    background-size: inherit;
+}
+@media (max-width: 1100px){
+    .logo{
+        font-size: 26px;
+        margin: 0;
+    }
+    .navbar-collapse{
+        font-size: 14px;
+        width: 100%;
+        position: relative;
+        z-index: 1;
+    }
+    .logo-text{
+        height: 230px;
+    }
+}
+@media (max-width: 767px){
+    .stick{
+        display: none;
+    }
+    .nav-item{
+        padding: 0 10px;
+        border-bottom: 1px solid #cfb54d;
+    }
+    .navbar-nav {
+        background: #f4d556;
+
+    }
+    .logo-text {
+        height: 130px;
+    }
+    #typingTwo h1{
+        font-size: 30px;
+    }
+    .presently{
+        overflow: unset;
+        max-height: unset;
+    }
+}
+@media (max-width: 480px){
+    .navbar-toggler{
+        padding: .1rem .25rem;
+    }
+    .logo{
+        font-size: 20px;
+    }
+    .logo-text {
+        height: 80px;
+        width: 320px;
+    }
+}
+
+.wrapper h3{
+    position: relative;
+    
+}
+.wrapper h3.logo::before, .wrapper h3.logo::after {
+	color: white;
+	content: "VERSTALPRO";
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background: black;
+	overflow: hidden;
+	top: 0;
+}
+
+.wrapper h3.logo::before {
+	left: 3px;
+	text-shadow: -2px 0 red;
+	animation-name: glitch-animation-1;
+	animation-duration: 2s;
+	animation-timing-function: linear;
+	animation-delay: 0s;
+	animation-iteration-count: infinite;
+	animation-direction: reverse-alternate;
+}
+
+.wrapper h3.logo::after {
+	left: -3px;
+	text-shadow: -2px 0 blue;
+	animation-name: glitch-animation-2;
+	animation-duration: 2s;
+	animation-timing-function: linear;
+	animation-delay: 0s;
+	animation-iteration-count: infinite;
+	animation-direction: reverse-alternate;
+}
+
+@keyframes glitch-animation-1 {
+	0% {
+		clip: rect(110px, 350px, 56px, 0px);
+	}
+
+	5% {
+		clip: rect(112px, 350px, 135px, 0px);
+	}
+
+	10% {
+		clip: rect(88px, 350px, 149px, 0px);
+	}
+
+	15% {
+		clip: rect(31px, 350px, 25px, 0px);
+	}
+
+	20% {
+		clip: rect(147px, 350px, 150px, 0px);
+	}
+
+	25% {
+		clip: rect(95px, 350px, 123px, 0px);
+	}
+
+	30% {
+		clip: rect(40px, 350px, 119px, 0px);
+	}
+
+	35% {
+		clip: rect(115px, 350px, 55px, 0px);
+	}
+
+	40% {
+		clip: rect(37px, 350px, 98px, 0px);
+	}
+
+	45% {
+		clip: rect(90px, 350px, 96px, 0px);
+	}
+
+	50% {
+		clip: rect(150px, 350px, 5px, 0px);
+	}
+
+	55% {
+		clip: rect(34px, 350px, 124px, 0px);
+	}
+
+	60% {
+		clip: rect(45px, 350px, 61px, 0px);
+	}
+
+	65% {
+		clip: rect(35px, 350px, 51px, 0px);
+	}
+
+	70% {
+		clip: rect(144px, 350px, 85px, 0px);
+	}
+
+	75% {
+		clip: rect(28px, 350px, 117px, 0px);
+	}
+
+	80% {
+		clip: rect(78px, 350px, 28px, 0px);
+	}
+
+	85% {
+		clip: rect(93px, 350px, 65px, 0px);
+	}
+
+	90% {
+		clip: rect(60px, 350px, 62px, 0px);
+	}
+
+	95% {
+		clip: rect(75px, 350px, 76px, 0px);
+	}
+
+	100% {
+		clip: rect(53px, 350px, 115px, 0px);
+	}
+}
+
+@keyframes glitch-animation-2 {
+	0% {
+		clip: rect(84px, 350px, 68px, 0px);
+	}
+
+	5% {
+		clip: rect(2px, 350px, 116px, 0px);
+	}
+
+	10% {
+		clip: rect(22px, 350px, 89px, 0px);
+	}
+
+	15% {
+		clip: rect(115px, 350px, 113px, 0px);
+	}
+
+	20% {
+		clip: rect(89px, 350px, 29px, 0px);
+	}
+
+	25% {
+		clip: rect(114px, 350px, 6px, 0px);
+	}
+
+	30% {
+		clip: rect(55px, 350px, 137px, 0px);
+	}
+
+	35% {
+		clip: rect(96px, 350px, 89px, 0px);
+	}
+
+	40% {
+		clip: rect(102px, 350px, 106px, 0px);
+	}
+
+	45% {
+		clip: rect(48px, 350px, 59px, 0px);
+	}
+
+	50% {
+		clip: rect(141px, 350px, 119px, 0px);
+	}
+
+	55% {
+		clip: rect(14px, 350px, 83px, 0px);
+	}
+
+	60% {
+		clip: rect(122px, 350px, 96px, 0px);
+	}
+
+	65% {
+		clip: rect(142px, 350px, 21px, 0px);
+	}
+
+	70% {
+		clip: rect(71px, 350px, 107px, 0px);
+	}
+
+	75% {
+		clip: rect(64px, 350px, 138px, 0px);
+	}
+
+	80% {
+		clip: rect(100px, 350px, 18px, 0px);
+	}
+
+	85% {
+		clip: rect(69px, 350px, 35px, 0px);
+	}
+
+	90% {
+		clip: rect(11px, 350px, 39px, 0px);
+	}
+
+	95% {
+		clip: rect(138px, 350px, 141px, 0px);
+	}
+
+	100% {
+		clip: rect(2px, 350px, 43px, 0px);
+	}
 }
