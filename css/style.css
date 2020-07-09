@@ -961,6 +961,7 @@ footer p {
     }
 }
 
+/* GLITCH */
 .wrapper h3{
     position: relative;
     
@@ -1168,4 +1169,28 @@ footer p {
 	100% {
 		clip: rect(2px, 350px, 43px, 0px);
 	}
+}
+
+
+
+/* MENU EFFECT */
+.navbar-nav li a:after {
+    display: block;
+    content: "";
+    height: 2px;
+    width: 0%;
+    background-color: #e9c639;
+    transition: width .3s ease-in-out;
+}
+.navbar-nav li:hover a {
+    color: #e9c639!important;
+}
+.navbar-nav li a:hover:after, .navbar-nav li a:focus:after {
+    width: 100%;
+}
+
+@keyframes line {
+    0% {
+        background-position-x: 390px;
+    }
 }
