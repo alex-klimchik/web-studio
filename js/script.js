@@ -1,4 +1,4 @@
-$(function() {
+$(function () {
 
     $("#typing").typed({
         strings: ["Welcome"],
@@ -19,8 +19,17 @@ $(function() {
         contentType: 'html',
     });
 });
+$(document).ready(function () {
+    $('body,html').on("click", "a.nav-link", function (event) {
+        event.preventDefault();
+        let id = $(this).attr('href');
+        if(id === '#') return
+        let top = $(id).offset().top;
+        $('body,html').animate({ scrollTop: top }, 500);
+    });
+});
 
-let btns = document.querySelectorAll('.services__footer div');
+const btns = document.querySelectorAll('.services__footer div');
 
 function removeClasses() {
     btns.forEach((div) => {
@@ -28,7 +37,7 @@ function removeClasses() {
     })
 }
 
-document.querySelector('.fornt').addEventListener('click', function() {
+document.querySelector('.fornt').addEventListener('click', function () {
     removeClasses();
     this.classList.add('active');
     document.querySelector('.service-text-company').innerHTML = `<h4>Front-end</h4><br>
@@ -41,7 +50,7 @@ nulla pariatur. Excepteur sint occaecat cupidatat non proident,
 sunt in culpa qui officia deserunt mollit anim id est laborum. Duis aute irure dolor in 
 reprehenderit in voluptate velit esse cillum </p>`;
 })
-document.querySelector('.back').addEventListener('click', function() {
+document.querySelector('.back').addEventListener('click', function () {
     removeClasses();
     this.classList.add('active');
     document.querySelector('.service-text-company').innerHTML = `<h4>Back-end</h4><br>
@@ -53,7 +62,7 @@ reprehenderit in voluptate velit esse cillum dolore eu fugiat
 nulla pariatur. Excepteur sint occaecat cupidatat non proident, 
 sunt in culpa qui officia deserunt mollit anim id est laborum.</p>`;
 })
-document.querySelector('.game').addEventListener('click', function() {
+document.querySelector('.game').addEventListener('click', function () {
     removeClasses();
     this.classList.add('active');
     document.querySelector('.service-text-company').innerHTML = `<h4>Game-dev</h4><br>
