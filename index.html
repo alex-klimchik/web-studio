@@ -27,9 +27,46 @@
 
     <link href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" rel="stylesheet">
 
-    <script src="type.js"></script>
+    <script src="js/type.js"></script>
+    <script>
+        setTimeout(function () {
+            $('.loader').addClass(1200, 'd-none').fadeOut('slow');
+            $('.page-loading').removeClass('d-none');
+        }, 1200);
+    </script>
 
 <body>
+    <div class="loader">
+        <div class="loader-inner">
+            <span>V</span>
+            <span>E</span>
+            <span>R</span>
+            <span>S</span>
+            <span>T</span>
+            <span>A</span>
+            <span>L</span>
+            <span>P</span>
+            <span>R</span>
+            <span>O</span>
+
+            <div class="covers">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </div>
+
+
+
+
     <!-- <header>
         <div class="figure">
             <div class="figure_main">
@@ -142,7 +179,6 @@
                     <div class="services-image">
                         <div>
                             <img src="img/noutbukdprogramm_1 1.png" alt="Notebook">
-                            <span></span>
                         </div>
                     </div>
                     <div class="services-text">
@@ -150,16 +186,14 @@
                         <div class="service-text-company">
                             <h4>С нами разработка сайта — не расходы, а инвестиция в ваш бизнес</h4>
                             <p>У вас ведь десятки требований к будущему сайту, не так ли? А должно быть только одно —
-                                чтобы
-                                он выполнял коммерческую или PR-задачу. Иначе это деньги на ветер. Вам нужен эффективный
-                                бизнес-инструмент. Именно такие мы и создаем уже более 6 лет.
+                                чтобы он выполнял коммерческую или PR-задачу. Иначе это деньги на ветер. Вам нужен
+                                эффективный бизнес-инструмент. Именно такие мы и
+                                создаем уже более 6 лет.
                             </p>
                             <p>
-                                Сайты, разработанные без
-                                оглядки на digital-маркетинг, обречены. Ведь секрет успеха — в комплексном подходе.
-                                Поэтому
-                                в Promodex программисты, дизайнеры, копирайтеры, аналитики, специалисты по SEO и PPC
-                                работают сообща. Вплоть до результата.</p>
+                                Сайты, разработанные без оглядки на digital-маркетинг, обречены. Ведь секрет успеха — в
+                                комплексном подходе. Поэтому в Promodex программисты, дизайнеры, копирайтеры, аналитики,
+                                специалисты по SEO и PPC работают сообща. Вплоть до результата.</p>
                         </div>
                     </div>
 
@@ -173,23 +207,16 @@
         </section>
         <div class="section-one">
             <div class="yellow-bg">
-                <div class="tex-logo">
-                    <h1>О нас</h1>
-                    <p class="btn-front">Lorem ipsum dolor sit amet, consectetur
-                        adipiscing elit, sed do eiusmod tempor incididunt ut labore
-                        et dolore magna aliqua.Excepteur sint occaecat cupidatat non proident,
-                        sunt in culpa qui officia deserunt mollit anim id est
-                        laborum. Ut enim ad minim veniam, quis
-                        nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-                        commodo consequat. Duis aute irure dolor in reprehenderit
-                        in voluptate velit esse cillum dolore eu fugiat nulla
-                        pariatur. Excepteur sint occaecat cupidatat non proident,
-                        sunt in culpa qui officia deserunt mollit anim id est
-                        laborum.</p>
-                </div>
+                <h1>О нас</h1>
+                <p class="btn-front">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                    incididunt ut labore et dolore magna aliqua.Excepteur sint occaecat cupidatat non proident, sunt in
+                    culpa qui officia deserunt mollit anim id est laborum.
+                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+                    nulla pariatur. Excepteur sint
+                    occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                </p>
             </div>
-
-
         </div>
         <!-- <section class="we">
             <div class="container">
@@ -321,7 +348,7 @@
 
                     <div class="design_left">
                         <div class="box-slider">
-                            <div id="slider-CRM" class="carousel slide" data-ride="carousel">
+                            <div id="slider-CRM" class="case carousel slide" data-ride="carousel">
 
                                 <!-- Indicators -->
                                 <ul class="carousel-indicators">
@@ -354,13 +381,25 @@
                                 <a class="carousel-control-next" href="#slider-CRM" data-slide="next">
                                     <span class="carousel-control-next-icon"></span>
                                 </a>
+
+                                <div class="overlay">
+                                    <div class="text">
+                                        <h4>Site</h4>
+                                        <ul>
+                                            <li>Lorem ipsum dolor sit amet</li>
+                                            <li>Lorem ipsum dolor sit amet</li>
+
+                                        </ul>
+                                    </div>
+                                </div>
+
                             </div>
                         </div>
                     </div>
 
                     <div class="design_right">
                         <div class="box-slider">
-                            <div id="slider-CRM-design" class="carousel slide" data-ride="carousel">
+                            <div id="slider-CRM-design" class="case carousel slide" data-ride="carousel">
 
                                 <!-- Indicators -->
                                 <ul class="carousel-indicators">
@@ -393,6 +432,18 @@
                                 <a class="carousel-control-next" href="#slider-CRM-design" data-slide="next">
                                     <span class="carousel-control-next-icon"></span>
                                 </a>
+
+                                <div class="overlay">
+                                    <div class="text">
+                                        <h4>Site</h4>
+                                        <ul>
+                                            <li>Lorem ipsum dolor sit amet</li>
+                                            <li>Lorem ipsum dolor sit amet</li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+
                             </div>
 
                         </div>
@@ -405,13 +456,12 @@
             <div class="title-cont">
                 <h4>Contacts</h4>
                 <div class="text-cont">
-                    <p>Мы создаем решения, которые помогают бизнесу
-
-                        развиваться, делаем это за разумные деньги и в реальные сроки.</p>
+                    <p>Мы создаем решения, которые помогают бизнесу развиваться, делаем это за разумные деньги и в
+                        реальные сроки.</p>
                     <p><span class="icons-cont"><i class="fas fa-mobile-alt"></i></span> +38 (050) 249-63-07</p>
                     <p><span class="icons-cont"><i class="far fa-envelope-open"></i></span> info@arp-solution.eu</p>
-                    <p><span class="icons-cont"><i class="fas fa-map-marker-alt"></i></span> Днепр, Украина
-                        пр. Д.Яворницкого 111/57</p>
+                    <p><span class="icons-cont"><i class="fas fa-map-marker-alt"></i></span> Днепр, Украина пр.
+                        Д.Яворницкого 111/57</p>
                 </div>
             </div>
             <div class="bloks-img">
@@ -425,73 +475,8 @@
             &copy; Все права защищены. VerstalPro official 2020
         </p>
     </footer>
-    <script>
-        $(function () {
+    <script src="js/script.js"></script>
 
-            $("#typing").typed({
-                strings: ["Welcome"],
-                typeSpeed: 70,
-                backDelay: 1500,
-                startDelay: 2500,
-                loop: true,
-                loopCount: 'infiniti',
-                contentType: 'html',
-            });
-            $("#typingTwo").typed({
-                strings: [`<h1>Web development</h1>`],
-                typeSpeed: 70,
-                backDelay: 2500,
-                startDelay: 2500,
-                loop: true,
-                loopCount: 'infiniti',
-                contentType: 'html',
-            });
-        });
-
-        let btns = document.querySelectorAll('.services__footer div');
-        function removeClasses() {
-            btns.forEach((div) => {
-                div.classList.remove('active');
-            })
-        }
-
-        document.querySelector('.fornt').addEventListener('click', function () {
-            removeClasses();
-            this.classList.add('active');
-            document.querySelector('.service-text-company').innerHTML = `<h4>Front-end</h4><br>
-   <p> 111 Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-     Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
-      nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in 
-      reprehenderit in voluptate velit esse cillum dolore eu fugiat 
-      nulla pariatur. Excepteur sint occaecat cupidatat non proident, 
-      sunt in culpa qui officia deserunt mollit anim id est laborum. Duis aute irure dolor in 
-      reprehenderit in voluptate velit esse cillum </p>`;
-        })
-        document.querySelector('.back').addEventListener('click', function () {
-            removeClasses();
-            this.classList.add('active');
-            document.querySelector('.service-text-company').innerHTML = `<h4>Back-end</h4><br>
-  <p> 22222 Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-     Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
-      nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in 
-      reprehenderit in voluptate velit esse cillum dolore eu fugiat 
-      nulla pariatur. Excepteur sint occaecat cupidatat non proident, 
-      sunt in culpa qui officia deserunt mollit anim id est laborum.</p>`;
-        })
-        document.querySelector('.game').addEventListener('click', function () {
-            removeClasses();
-            this.classList.add('active');
-            document.querySelector('.service-text-company').innerHTML = `<h4>Game-dev</h4><br>
-  <p> 333 3 33 Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-     Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
-      nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in 
-      reprehenderit in voluptate velit esse cillum dolore eu fugiat 
-      nulla pariatur.</p>`;
-        })
-    </script>
 
 </body>
 
