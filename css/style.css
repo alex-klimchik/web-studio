@@ -1310,7 +1310,7 @@ textarea.form-control {
 
 .wrapper h3.logo::before,
 .wrapper h3.logo::after {
-    color: white;
+    color: #e9c639;
     content: "VERSTALPRO";
     position: absolute;
     width: 100%;
