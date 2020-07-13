@@ -74,9 +74,11 @@
         margin-bottom: 100%;
         height: 20px;
     }
+
     50% {
         margin-bottom: 0;
     }
+
     100% {
         margin-bottom: 0;
     }
@@ -414,35 +416,26 @@ main {
 
 .services .services-image {
     display: flex;
-    padding-right: 20px;
     box-sizing: border-box;
-    padding-top: 50px;
-    padding-bottom: 30px;
+    padding: 50px 60px 30px 0;
     margin-top: 20px;
+    margin-bottom: 50px;
 }
 
 .services .services-image>div {
-    width: 500px;
-    height: 325px;
     position: relative;
+    background-color: #ffde59;
+    width: 100%;
+    max-width: 500px;
 }
 
 .services .services-image>div img {
     top: 20px;
     left: 20px;
-    width: 450px;
-    height: 330px;
+    width: 100%;
+    height: 100%;
     position: relative;
     z-index: 3;
-}
-
-.services .services-image span {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 85%;
-    height: 100%;
-    background-color: #ffde59;
 }
 
 .services__footer {
@@ -596,9 +589,11 @@ main {
     0% {
         opacity: 1;
     }
+
     50% {
         opacity: 0;
     }
+
     100% {
         opacity: 1;
     }
@@ -714,7 +709,7 @@ main {
 }
 
 .carousel-indicators li {
-    background-color: #ff8c00!important;
+    background-color: #ff8c00 !important;
 }
 
 
@@ -749,9 +744,11 @@ footer p {
     0% {
         opacity: 1;
     }
+
     50% {
         opacity: 0;
     }
+
     100% {
         opacity: 1;
     }
@@ -761,9 +758,11 @@ footer p {
     0% {
         opacity: 1;
     }
+
     50% {
         opacity: 0;
     }
+
     100% {
         opacity: 1;
     }
@@ -773,9 +772,11 @@ footer p {
     0% {
         opacity: 1;
     }
+
     50% {
         opacity: 0;
     }
+
     100% {
         opacity: 1;
     }
@@ -847,9 +848,6 @@ footer p {
 .yellow-bg {
     background: rgba(255, 222, 89, 0.82);
     width: 60%;
-}
-
-.tex-logo {
     flex-direction: column;
     display: flex;
     align-items: flex-start;
@@ -858,7 +856,7 @@ footer p {
     padding: 30px;
 }
 
-.tex-logo h1 {
+.yellow-bg h1 {
     font-family: 'Rubik Mono One', sans-serif;
     font-size: 50px;
     color: white;
@@ -868,8 +866,8 @@ footer p {
     margin-top: 15px;
     font-weight: 700;
     background: #201f1f;
-    color: white!important;
-    padding: 10px 100px;
+    color: white !important;
+    padding: 15px 25px;
     text-transform: uppercase;
 }
 
@@ -894,7 +892,7 @@ footer p {
 .text-cont {
     margin-top: 15px;
     font-weight: 700;
-    color: black!important;
+    color: black !important;
     padding: 10px 25px;
     text-transform: uppercase;
 }
@@ -954,17 +952,9 @@ footer p {
         line-height: 20px;
         text-indent: 30px;
     }
+
     .services .services-text>div {
-        background: #444444;
         padding: 10px 15px 20px;
-    }
-    .services .services-image>div {
-        width: 500px;
-        height: 355px;
-    }
-    .services .services-image>div img {
-        width: 420px;
-        height: 320px;
     }
     .services__footer div {
         width: 25%;
@@ -976,27 +966,30 @@ footer p {
     .services__footer span {
         font-size: 35px;
     }
+
     .figure_main span {
         width: 310px;
     }
+
     .figure .figure_main h1 {
         font-size: 33px;
         line-height: 48px;
     }
 }
 
-@media screen and (max-width: 795px) {}
-
 @media screen and (max-width: 575px) {
     .text-front {
         display: block;
     }
+
     .text-front img {
         width: 100%;
     }
+
     .text-front div {
         padding: 15px 5px;
     }
+
     .technologi {
         padding: 5px;
         width: 100%;
@@ -1006,9 +999,11 @@ footer p {
         text-align: center;
         padding: 15px;
     }
+
     .group-forms {
         padding: 0;
     }
+
     form {
         padding-bottom: 15px;
         display: block;
@@ -1020,50 +1015,35 @@ footer p {
         width: 100%;
         background-size: cover;
     }
+
     .main-text {
         display: none;
     }
+
     .one {
         justify-content: center;
         display: flex;
-    }
-    .services .services__wraper {
-        display: block;
-    }
-    .services-image {
-        display: none;
-    }
-    .services .services-text,
-    .services .services-image {
-        width: 100%;
-    }
-    .services__footer div {
-        width: 30%;
-        height: 100px;
-    }
-    .services__footer span {
-        font-size: 20px;
-        line-height: 50px;
-    }
-    .services__footer {
-        padding: 0;
     }
     .we .we__wrap {
         display: block;
         padding-top: 45px;
         padding-bottom: 45px;
     }
+
     .we .we-img {
         width: 100%;
         padding-top: 15px;
     }
+
     .we .we-text {
         width: 100%;
     }
+
     .portfolio .portfolio__works>div {
         width: 47%;
         margin-bottom: 25px;
     }
+
     .design_wrap {
         width: 100%;
         display: block;
@@ -1072,20 +1052,16 @@ footer p {
     .design_right {
         width: 100%;
     }
+
     .design_right {
         margin-top: 60px;
     }
+
     .we .we-text>div {
         right: 0;
     }
-    .services .services-image>div {
-        width: 100%;
-        height: 100%;
-    }
+
 }
-
-@media screen and (max-width: 479px) {}
-
 
 /*page front*/
 
@@ -1111,7 +1087,7 @@ footer p {
 .text-front {
     margin-top: 15px;
     font-weight: 700;
-    color: black!important;
+    color: black !important;
     text-transform: uppercase;
     display: flex;
     padding: 20px;
@@ -1128,7 +1104,7 @@ footer p {
 .btn-slid {
     padding: 5px 20px;
     border: 1px solid #ffbf49;
-    color: #ffc14c!important;
+    color: #ffc14c !important;
 }
 
 .openbox {
@@ -1140,7 +1116,7 @@ footer p {
 
 .technologi {
     font-weight: 700;
-    color: black!important;
+    color: black !important;
     text-transform: uppercase;
     padding: 20px;
     width: 50%;
@@ -1156,7 +1132,7 @@ footer p {
 
 .list li {
     font-weight: 700;
-    color: black!important;
+    color: black !important;
     text-transform: uppercase;
     padding: 15px;
     list-style-type: none;
@@ -1265,26 +1241,142 @@ textarea.form-control {
     }
 }
 
+@media (max-width: 991px) {
+
+    .services .services-image {
+        padding-right: 40px;
+    }
+
+    .services .services-text p {
+        font-size: 14px;
+    }
+
+    .services__footer span {
+        font-size: 28px;
+    }
+
+    .section-one {
+        padding: 30px 0;
+    }
+
+    .yellow-bg {
+        margin: 0 auto;
+        border-radius: 5px;
+    }
+
+    .btn-front {
+        border-radius: 5px;
+    }
+}
+
 @media (max-width: 767px) {
+
     .stick {
         display: none;
     }
+
     .nav-item {
         padding: 0 10px;
         border-bottom: 1px solid #cfb54d;
     }
+
     .navbar-nav {
         background: #f4d556;
     }
+
     .logo-text {
         height: 130px;
     }
+
     #typingTwo h1 {
         font-size: 30px;
     }
+
     .presently {
-        overflow: unset;
-        max-height: unset;
+        height: 50vh;
+    }
+
+    #myVideo {
+        width: unset;
+        height: 100%;
+    }
+
+    .services .services__wraper {
+        flex-direction: column;
+    }
+
+    .services .services-image {
+        display: none;
+    }
+
+    .services .services-text,
+    .services .services-image {
+        width: 100%;
+    }
+
+    .services .services-image>div {
+        max-width: 300px;
+        margin: 0 auto;
+    }
+
+    .services__footer span {
+        font-size: 20px;
+        line-height: 42px;
+    }
+
+    .services__footer div {
+        width: 25%;
+        height: 100px;
+    }
+
+    .btn-front {
+        font-size: 14px;
+    }
+
+    .yellow-bg {
+        width: 90%;
+    }
+
+    .yellow-bg h1 {
+        margin: 10px 0;
+        font-size: 38px;
+    }
+
+    .loader {
+        font-size: 150%;
+    }
+
+    .loader span {
+        height: 75px;
+        line-height: 100px;
+        width: 25px;
+    }
+}
+
+@media (max-width: 575px) {
+    .services .services-text>div {
+        min-height: 400px;
+    }
+
+    .services__footer {
+        padding: 0 10px;
+    }
+
+    .services__footer div {
+        width: 31%;
+    }
+
+    .services__footer span {
+        font-size: 16px;
+        line-height: 35px;
+    }
+
+    .yellow-bg {
+        padding: 15px;
+    }
+
+    .btn-front {
+        margin: 0;
     }
 }
 
@@ -1295,6 +1387,7 @@ textarea.form-control {
     .logo {
         font-size: 20px;
     }
+
     .logo-text {
         height: 80px;
         width: 320px;
@@ -1310,7 +1403,7 @@ textarea.form-control {
 
 .wrapper h3.logo::before,
 .wrapper h3.logo::after {
-    color: #e9c639;
+    color: white;
     content: "VERSTALPRO";
     position: absolute;
     width: 100%;
@@ -1346,63 +1439,83 @@ textarea.form-control {
     0% {
         clip: rect(110px, 350px, 56px, 0px);
     }
+
     5% {
         clip: rect(112px, 350px, 135px, 0px);
     }
+
     10% {
         clip: rect(88px, 350px, 149px, 0px);
     }
+
     15% {
         clip: rect(31px, 350px, 25px, 0px);
     }
+
     20% {
         clip: rect(147px, 350px, 150px, 0px);
     }
+
     25% {
         clip: rect(95px, 350px, 123px, 0px);
     }
+
     30% {
         clip: rect(40px, 350px, 119px, 0px);
     }
+
     35% {
         clip: rect(115px, 350px, 55px, 0px);
     }
+
     40% {
         clip: rect(37px, 350px, 98px, 0px);
     }
+
     45% {
         clip: rect(90px, 350px, 96px, 0px);
     }
+
     50% {
         clip: rect(150px, 350px, 5px, 0px);
     }
+
     55% {
         clip: rect(34px, 350px, 124px, 0px);
     }
+
     60% {
         clip: rect(45px, 350px, 61px, 0px);
     }
+
     65% {
         clip: rect(35px, 350px, 51px, 0px);
     }
+
     70% {
         clip: rect(144px, 350px, 85px, 0px);
     }
+
     75% {
         clip: rect(28px, 350px, 117px, 0px);
     }
+
     80% {
         clip: rect(78px, 350px, 28px, 0px);
     }
+
     85% {
         clip: rect(93px, 350px, 65px, 0px);
     }
+
     90% {
         clip: rect(60px, 350px, 62px, 0px);
     }
+
     95% {
         clip: rect(75px, 350px, 76px, 0px);
     }
+
     100% {
         clip: rect(53px, 350px, 115px, 0px);
     }
@@ -1412,63 +1525,83 @@ textarea.form-control {
     0% {
         clip: rect(84px, 350px, 68px, 0px);
     }
+
     5% {
         clip: rect(2px, 350px, 116px, 0px);
     }
+
     10% {
         clip: rect(22px, 350px, 89px, 0px);
     }
+
     15% {
         clip: rect(115px, 350px, 113px, 0px);
     }
+
     20% {
         clip: rect(89px, 350px, 29px, 0px);
     }
+
     25% {
         clip: rect(114px, 350px, 6px, 0px);
     }
+
     30% {
         clip: rect(55px, 350px, 137px, 0px);
     }
+
     35% {
         clip: rect(96px, 350px, 89px, 0px);
     }
+
     40% {
         clip: rect(102px, 350px, 106px, 0px);
     }
+
     45% {
         clip: rect(48px, 350px, 59px, 0px);
     }
+
     50% {
         clip: rect(141px, 350px, 119px, 0px);
     }
+
     55% {
         clip: rect(14px, 350px, 83px, 0px);
     }
+
     60% {
         clip: rect(122px, 350px, 96px, 0px);
     }
+
     65% {
         clip: rect(142px, 350px, 21px, 0px);
     }
+
     70% {
         clip: rect(71px, 350px, 107px, 0px);
     }
+
     75% {
         clip: rect(64px, 350px, 138px, 0px);
     }
+
     80% {
         clip: rect(100px, 350px, 18px, 0px);
     }
+
     85% {
         clip: rect(69px, 350px, 35px, 0px);
     }
+
     90% {
         clip: rect(11px, 350px, 39px, 0px);
     }
+
     95% {
         clip: rect(138px, 350px, 141px, 0px);
     }
+
     100% {
         clip: rect(2px, 350px, 43px, 0px);
     }
@@ -1487,7 +1620,7 @@ textarea.form-control {
 }
 
 .navbar-nav li:hover a {
-    color: #e9c639!important;
+    color: #e9c639 !important;
 }
 
 .navbar-nav li a:hover:after,
@@ -1505,12 +1638,15 @@ textarea.form-control {
     .text-front {
         display: block;
     }
+
     .text-front img {
         width: 100%;
     }
+
     .text-front div {
         padding: 15px 5px;
     }
+
     .technologi {
         padding: 5px;
         width: 100%;
