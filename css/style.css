@@ -1308,12 +1308,16 @@ textarea.form-control {
     transition: 1s;
     z-index: 11;
     white-space: nowrap;
-    background-color: rgba(179, 179, 179, 0.08);
-    border-radius: 3px;
+    background-color: #121212;
+    border-radius: 5px;
+}
+.submenu li:hover a{
+    color: #e9c639 !important;
 }
 .navbar-nav>li:hover ul.submenu{
     height: unset!important;
 }
+
 .nav-item {
     position: relative;
 }
@@ -1535,7 +1539,7 @@ textarea.form-control {
 @media (min-width: 768px) {
     /* MENU EFFECT */
 
-    .navbar-nav li a:after {
+    .navbar-nav li.nav-item a:after {
         display: block;
         content: "";
         height: 2px;
@@ -1544,11 +1548,11 @@ textarea.form-control {
         transition: width .3s ease-in-out;
     }
 
-    .navbar-nav li:hover>a {
+    .navbar-nav li.nav-item:hover>a {
         color: #e9c639 !important;
     }
 
-    .navbar-nav li>a:hover:after {
+    .navbar-nav li.nav-item>a:hover:after {
         width: 100%;
     }
 }

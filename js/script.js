@@ -20,7 +20,7 @@ $(function () {
     });
 });
 $(document).ready(function () {
-    $('body,html').on("click", "a.nav-link", function (event) {
+    $('body,html').on("click", ".nav-item>a.nav-link", function (event) {
         event.preventDefault();
         let id = $(this).attr('href');
         if(id === '#') return
